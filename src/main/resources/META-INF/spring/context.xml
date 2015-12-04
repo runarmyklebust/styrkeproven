@@ -9,5 +9,4 @@
     <property name="mailFrom" value="${plugin.config.mailFrom}"/>
     <property name="mailFromName" value="${plugin.config.mailFromName}"/>
   </bean>
-
 </beans>

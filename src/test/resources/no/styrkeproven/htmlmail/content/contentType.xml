@@ -1,0 +1,390 @@
+<contenttype>
+  <config>
+    <form>
+      <title name="Etternavn" />
+      <block name="Ordre">
+        <input name="Dato" required="true" type="date">
+          <display>Ordredato</display>
+          <xpath>contentdata/Dato</xpath>
+        </input>
+      </block>
+      <block name="Team Jersey">
+        <input name="Team_Jersey" type="text">
+          <display>Team Jersey</display>
+          <xpath>contentdata/Team_Jersey</xpath>
+        </input>
+        <input name="Team_Jersey_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Team_Jersey_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Team_Jersey_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Team_Jersey_amount</xpath>
+        </input>
+        <input name="Team_Jersey_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Team_Jersey_price</xpath>
+        </input>
+      </block>
+      <block name="Womens Team Jersey">
+        <input name="Womens_Team_Jersey" type="text">
+          <display>Womens Team Jersey</display>
+          <xpath>contentdata/Womens_Team_Jersey</xpath>
+        </input>
+        <input name="Womens_Team_Jersey_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Womens_Team_Jersey_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Womens_Team_Jersey_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Womens_Team_Jersey_amount</xpath>
+        </input>
+        <input name="Womens_Team_Jersey_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Womens_Team_Jersey_price</xpath>
+        </input>
+      </block>
+      <block name="Windstopper Vest">
+        <input name="Windstopper_vest" type="text">
+          <display>Windstopper Vest</display>
+          <xpath>contentdata/Windstopper_vest</xpath>
+        </input>
+        <input name="Windstopper_vest_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Windstopper_vest_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Windstopper_vest_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Windstopper_vest_amount</xpath>
+        </input>
+        <input name="Windstopper_vest_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Windstopper_vest_price</xpath>
+        </input>
+      </block>
+      <block name="Windstopper Jacket">
+        <input name="Windstopper_Jacket" type="text">
+          <display>Windstopper Jacket</display>
+          <xpath>contentdata/Windstopper_Jacket</xpath>
+        </input>
+        <input name="Windstopper_Jacket_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Windstopper_Jacket_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Windstopper_Jacket_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Windstopper_Jacket_amount</xpath>
+        </input>
+        <input name="Windstopper_Jacket_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Windstopper_Jacket_price</xpath>
+        </input>
+      </block>
+      <block name="Volo BIB short">
+        <input name="Volo_BIB_short" type="text">
+          <display>Volo BIB short</display>
+          <xpath>contentdata/Volo_BIB_short</xpath>
+        </input>
+        <input name="Volo_BIB_short_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Volo_BIB_short_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Volo_BIB_short_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Volo_BIB_short_amount</xpath>
+        </input>
+        <input name="Volo_BIB_short_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Volo_BIB_short_price</xpath>
+        </input>
+      </block>
+      <block name="Volo Woman BIB short">
+        <input name="Volo_Woman_BIB_short" type="text">
+          <display>Volo Woman BIB short</display>
+          <xpath>contentdata/Volo_Woman_BIB_short</xpath>
+        </input>
+        <input name="Volo_Woman_BIB_short_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Volo_Woman_BIB_short_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Volo_Woman_BIB_short_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Volo_Woman_BIB_short_amount</xpath>
+        </input>
+        <input name="Volo_Woman_BIB_short_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Volo_Woman_BIB_short_price</xpath>
+        </input>
+      </block>
+      <block name="Thermoflec Arm Warmers">
+        <input name="Thermoflec_Arm_Warmers" type="text">
+          <display>Thermoflec Arm Warmers</display>
+          <xpath>contentdata/Thermoflec_Arm_Warmers</xpath>
+        </input>
+        <input name="Thermoflec_Arm_Warmers_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Thermoflec_Arm_Warmers_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Thermoflec_Arm_Warmers_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Thermoflec_Arm_Warmers_amount</xpath>
+        </input>
+        <input name="Thermoflec_Arm_Warmers_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Thermoflec_Arm_Warmers_price</xpath>
+        </input>
+      </block>
+      <block name="Aero Race Lycra Shoe Cover">
+        <input name="Aero_Race_Lycra_Shoe_Cover" type="text">
+          <display>Aero Race Lycra Shoe Cover</display>
+          <xpath>contentdata/Aero_Race_Lycra_Shoe_Cover</xpath>
+        </input>
+        <input name="Aero_Race_Lycra_Shoe_Cover_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Aero_Race_Lycra_Shoe_Cover_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Aero_Race_Lycra_Shoe_Cover_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Aero_Race_Lycra_Shoe_Cover_amount</xpath>
+        </input>
+        <input name="Aero_Race_Lycra_Shoe_Cover_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Aero_Race_Lycra_Shoe_Cover_price</xpath>
+        </input>
+      </block>
+      <block name="Cycling Cap">
+        <input name="Cycling_Cap" type="text">
+          <display>Cycling Cap</display>
+          <xpath>contentdata/Cycling_Cap</xpath>
+        </input>
+        <input name="Cycling_Cap_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Cycling_Cap_size</xpath>
+          <options>
+            <option>Velg size</option>
+            <option value="NONE">None</option>
+            <option value="UNI">UNI (One Size)</option>
+          </options>
+        </input>
+        <input name="Cycling_Cap_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Cycling_Cap_amount</xpath>
+        </input>
+        <input name="Cycling_Cap_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Cycling_Cap_price</xpath>
+        </input>
+      </block>
+      <block name="Aero Race Gloves">
+        <input name="Aero_Race_Gloves" type="text">
+          <display>Aero Race Gloves</display>
+          <xpath>contentdata/Aero_Race_Gloves</xpath>
+        </input>
+        <input name="Aero_Race_Gloves_size" type="dropdown">
+          <display>Størrelse</display>
+          <xpath>contentdata/Aero_Race_Gloves_size</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="NONE">None</option>
+            <option value="XXS">2XS</option>
+            <option value="XS">XS</option>
+            <option value="SMALL">Small</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LARGE">Large</option>
+            <option value="XL">X-Large</option>
+            <option value="XXL">2X-Large</option>
+            <option value="XXXL">3X-Large</option>
+            <option value="XXXXL">4X-Large</option>
+            <option value="XXXXXL">5X-Large</option>
+          </options>
+        </input>
+        <input name="Aero_Race_Gloves_color" type="dropdown">
+          <display>Farge</display>
+          <xpath>contentdata/Aero_Race_Gloves_color</xpath>
+          <options>
+            <option>Velg</option>
+            <option value="Black">Black</option>
+            <option value="Pink">Pink</option>
+          </options>
+        </input>
+        <input name="Aero_Race_Gloves_amount" type="text">
+          <display>Antall</display>
+          <xpath>contentdata/Aero_Race_Gloves_amount</xpath>
+        </input>
+        <input name="Aero_Race_Gloves_price" type="text">
+          <display>Pris</display>
+          <xpath>contentdata/Aero_Race_Gloves_price</xpath>
+        </input>
+      </block>
+      <block name="Kundeinformasjon">
+        <input name="Nyhetsbrev" type="radiobutton">
+          <display>Nyhetsbrev</display>
+          <xpath>contentdata/Nyhetsbrev</xpath>
+          <options>
+            <option value="Ja">Ja</option>
+            <option value="Nei">Nei</option>
+          </options>
+        </input>
+        <input name="Fornavn" required="true" type="text">
+          <display>Fornavn</display>
+          <xpath>contentdata/Fornavn</xpath>
+        </input>
+        <input name="Etternavn" required="true" type="text">
+          <display>Etternavn</display>
+          <xpath>contentdata/Etternavn</xpath>
+        </input>
+        <input name="Adresse" required="true" type="text">
+          <display>Adresse</display>
+          <xpath>contentdata/Adresse</xpath>
+        </input>
+        <input name="Postnr" required="true" type="text" validate="integer">
+          <display>Postnr</display>
+          <xpath>contentdata/Postnr</xpath>
+          <maxlength value="4" />
+        </input>
+        <input name="By" required="true" type="text">
+          <display>By</display>
+          <xpath>contentdata/By</xpath>
+        </input>
+        <input name="Telefon" type="text">
+          <display>Telefon</display>
+          <xpath>contentdata/Telefon</xpath>
+        </input>
+        <input name="cc" required="true" type="text">
+          <display>E-mail</display>
+          <xpath>contentdata/cc</xpath>
+        </input>
+      </block>
+      <block name="System validation">
+        <input name="unik" readonly="true" type="text">
+          <display>Random receipt key (do not alter)</display>
+          <xpath>contentdata/unik</xpath>
+        </input>
+      </block>
+    </form>
+  </config>
+  <browse>
+    <column>
+      <title />
+    </column>
+    <column>
+      <timestamp />
+    </column>
+  </browse>
+  <indexparameters>
+    <index xpath="contentdata/Etternavn" />
+    <index name="unik" xpath="contentdata/unik" />
+  </indexparameters>
+</contenttype>
