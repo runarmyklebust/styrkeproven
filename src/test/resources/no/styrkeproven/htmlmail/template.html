@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<h1>Takk for din bestilling</h1>
+
+<h2>Oppsummering</h2>
+
+{{#orderSummary}}
+
+<h3>Antall produkter: {{numberOfProducts}}</h3>
+
+<ul>
+    {{#items}}
+    <li>
+        Name: {{displayName}}<BR/>
+        Price: {{price}}<BR/>
+        Amount: {{amount}}<BR/>
+        Size: {{size}}<BR/>
+    </li>
+    {{/items}}
+</ul>
+
+<p>Sum: {{sum}}</p>
+
+{{/orderSummary}}
+
+</body>
+
+</html>

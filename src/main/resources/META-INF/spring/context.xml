@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+  <bean class="no.styrkeproven.htmlmail.OrderFormController" init-method="init">
+    <property name="displayName" value="Order form"/>
+    <property name="urlPattern" value="/site/0/orderform"/>
+    <property name="smtpHost" value="${plugin.config.smtpHost}"/>
+    <property name="mailFrom" value="${plugin.config.mailFrom}"/>
+    <property name="mailFromName" value="${plugin.config.mailFromName}"/>
+  </bean>
+
+</beans>
