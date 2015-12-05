@@ -1,5 +1,6 @@
 package no.styrkeproven.htmlmail;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -58,16 +59,32 @@ public class OrderFormController
 
         doSendMail( request, parameterMap );
 
-        return true;
+        doRedirect( request, httpServletResponse );
+
+        return false;
     }
 
     @Override
     public void postHandle( final HttpServletRequest request, final HttpServletResponse httpServletResponse )
         throws Exception
     {
-        final String[] redirUrl = request.getParameterValues( "redir" );
 
-        httpServletResponse.sendRedirect( redirUrl[0] );
+    }
+
+    private void doRedirect( final HttpServletRequest request, final HttpServletResponse httpServletResponse )
+        throws IOException
+    {
+        final String[] redirUrl = request.getParameterValues( "redirect" );
+
+        if ( redirUrl.length > 0 )
+        {
+            httpServletResponse.sendRedirect( redirUrl[0] );
+        }
+        else
+        {
+            System.out.println( "ERROR: Missing redirect - URL" );
+            httpServletResponse.sendRedirect( "http://styrkeproven.no/shop/kvittering?order=success" );
+        }
     }
 
     private void verifyParameter( final String name, Map<String, String[]> parameters )
@@ -99,8 +116,6 @@ public class OrderFormController
         final Document contentTypeConfigXML = client.getContentTypeConfigXML( getContentParams );
 
         ContentTypeParser.parseInputTypeElements( inputTypeDefs, contentTypeConfigXML.getRootElement() );
-
-        System.out.println( "InputTypeDefs: " + inputTypeDefs.size() );
 
         return inputTypeDefs;
     }

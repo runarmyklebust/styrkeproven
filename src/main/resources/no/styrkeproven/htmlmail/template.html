@@ -1,28 +1,35 @@
 <html>
 <body>
 
+<img src="http://styrkeproven.no/_public/mail/top.jpg">
+
 <h1>Takk for din bestilling</h1>
 
-<h2>Oppsummering</h2>
+<h2>Summary</h2>
 
 {{#orderSummary}}
 
-<h3>Antall produkter: {{numberOfProducts}}</h3>
+<h3>Number of products ordered: {{numberOfProducts}}</h3>
 
 <ul>
     {{#items}}
     <li>
-        Name: {{displayName}}<BR/>
+        <strong>{{displayName}}</strong><BR/>
         Price: {{price}}<BR/>
         Amount: {{amount}}<BR/>
         Size: {{size}}<BR/>
+        -----------------<BR/>
+        Total: {{total}}<BR/>
+        -----------------<BR/>
     </li>
     {{/items}}
 </ul>
 
-<p>Sum: {{sum}}</p>
+<p>Order total amount: {{sum}}</p>
 
 {{/orderSummary}}
+
+<img src="http://styrkeproven.no/_public/mail/footer.jpg">
 
 </body>
 

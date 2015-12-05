@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.enonic.cms.api.client.model.CreateContentParams;
 import com.enonic.cms.api.client.model.content.ContentDataInput;
+import com.enonic.cms.api.client.model.content.ContentStatus;
 import com.enonic.cms.api.client.model.content.DateInput;
 import com.enonic.cms.api.client.model.content.Input;
 import com.enonic.cms.api.client.model.content.SelectorInput;
@@ -27,8 +28,6 @@ public class CreateContentParamsFactory
 
         for ( final InputTypeDef inputTypeDef : inputTypeDefs )
         {
-            System.out.println( "Checking inputTypeDef: " + inputTypeDef.getName() );
-
             final String inputName = inputTypeDef.getName();
 
             if ( params.containsKey( inputName ) )
@@ -43,6 +42,7 @@ public class CreateContentParamsFactory
         createContentParams.publishFrom = new java.util.Date();
         createContentParams.changeComment = "automatic generated";
         createContentParams.contentData = contentDataInput;
+        createContentParams.status = ContentStatus.STATUS_APPROVED;
 
         return createContentParams;
     }
@@ -61,13 +61,17 @@ public class CreateContentParamsFactory
             return new SelectorInput( inputTypeDef.getName(), values[0] );
         }
 
+        if ( inputTypeDef.getInputType().equals( "radiobutton" ) )
+        {
+            final String[] values = params.get( inputName );
+            return new SelectorInput( inputTypeDef.getName(), values[0] );
+        }
+
         if ( inputTypeDef.getInputType().equals( "date" ) )
         {
             final String[] values = params.get( inputName );
             try
             {
-                System.out.println("Incoming date: " + values[0]);
-
                 return new DateInput( inputTypeDef.getName(), FORM_DATE_FORMAT.parse( values[0] ) );
             }
             catch ( ParseException e )

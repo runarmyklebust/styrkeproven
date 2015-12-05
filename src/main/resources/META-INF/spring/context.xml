@@ -4,7 +4,7 @@
 
   <bean class="no.styrkeproven.htmlmail.OrderFormController" init-method="init">
     <property name="displayName" value="Order form"/>
-    <property name="urlPattern" value="/site/0/orderform"/>
+    <property name="urlPattern" value="${plugin.config.urlPattern}"/>
     <property name="smtpHost" value="${plugin.config.smtpHost}"/>
     <property name="mailFrom" value="${plugin.config.mailFrom}"/>
     <property name="mailFromName" value="${plugin.config.mailFromName}"/>

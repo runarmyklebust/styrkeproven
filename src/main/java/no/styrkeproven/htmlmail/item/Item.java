@@ -65,6 +65,11 @@ public class Item
         return size;
     }
 
+    public double getTotal()
+    {
+        return amount * price;
+    }
+
     public static final class Builder
     {
         private String displayName;
