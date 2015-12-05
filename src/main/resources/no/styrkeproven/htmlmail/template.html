@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<img src="http://styrkeproven.no/_public/mail/top.jpg">
+<img src="http://styrkeproven.no/_public/mail/top.jpg" alt="Styrkeprøven logo">
 
 <h1>Takk for din bestilling</h1>
 
@@ -14,23 +14,22 @@
 <ul>
     {{#items}}
     <li>
-        <strong>{{displayName}}</strong><BR/>
-        Price: {{price}}<BR/>
-        Amount: {{amount}}<BR/>
-        Size: {{size}}<BR/>
-        -----------------<BR/>
-        Total: {{total}}<BR/>
-        -----------------<BR/>
+        <strong>{{displayName}}</strong><br>
+        Price: {{price}}<br>
+        Amount: {{amount}}<br>
+        Size: {{size}}<br>
+        -----------------<br>
+        Total: {{total}}<br>
+        -----------------<br>
     </li>
     {{/items}}
 </ul>
 
-<p>Order total amount: {{sum}}</p>
+<p>Order total amount: {{sum}},- </p>
 
 {{/orderSummary}}
 
-<img src="http://styrkeproven.no/_public/mail/footer.jpg">
+<img src="http://styrkeproven.no/_public/mail/footer.jpg" alt="Styrkeprøven footer">
 
 </body>
-
 </html>

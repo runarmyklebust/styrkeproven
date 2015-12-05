@@ -130,7 +130,7 @@ public class OrderFormController
             smtpHost( this.smtpHost ).
             mailFromName( this.mailFromName ).
             mailMessage( createMessage( items ) ).
-            mailSubject( "Kvittering" ).
+            mailSubject( "Kvittering fra Styrkeprøven" ).
             mailTo( getStringParam( request, "cc", true ) ).
             build().
             send();
@@ -160,7 +160,7 @@ public class OrderFormController
 
         builder.append( "<html>" );
         builder.append( "<body>" );
-        builder.append( "Takk for bestillingen!</BR>" );
+        builder.append( "Takk for bestillingen!<br>" );
         builder.append( "Ordered items: " + items.size() );
         builder.append( items.toHtml() );
         builder.append( "</body" );
