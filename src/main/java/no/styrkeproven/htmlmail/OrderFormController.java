@@ -129,18 +129,18 @@ public class OrderFormController
             mailFrom( this.mailFrom ).
             smtpHost( this.smtpHost ).
             mailFromName( this.mailFromName ).
-            mailMessage( createMessage( items ) ).
+            mailMessage( createMessage( items, parameterMap ) ).
             mailSubject( "Kvittering fra Styrkeprøven" ).
             mailTo( getStringParam( request, "cc", true ) ).
             build().
             send();
     }
 
-    private String createMessage( final Items items )
+    private String createMessage( final Items items, Map<String, String[]> parameterMap )
     {
         final TemplateFactory templateFactory = new TemplateFactory();
 
-        final OrderSummary orderSummary = OrderSummaryFactory.create( items );
+        final OrderSummary orderSummary = OrderSummaryFactory.create( items, parameterMap );
 
         try
         {

@@ -1,6 +1,10 @@
 package no.styrkeproven.htmlmail;
 
+import java.util.Map;
+
 import org.apache.commons.io.IOUtils;
+
+import com.google.common.collect.Maps;
 
 import junit.framework.TestCase;
 import no.styrkeproven.htmlmail.item.Item;
@@ -43,7 +47,6 @@ public class TemplateFactoryTest
     public void testOrderSummary()
         throws Exception
     {
-
         final TemplateFactory templateFactory = new TemplateFactory();
 
         final Items items = new Items();
@@ -62,7 +65,16 @@ public class TemplateFactoryTest
             size( "Fisk" ).
             build() );
 
-        final OrderSummary orderSummary = OrderSummaryFactory.create( items );
+        final Map<String, String[]> paramsMap = Maps.newHashMap();
+
+        paramsMap.put( "Etternavn", new String[]{"Myklebust"} );
+        paramsMap.put( "Fornavn", new String[]{"Myklebust"} );
+        paramsMap.put( "Adresse", new String[]{"Olav Nygards vei 192"} );
+        paramsMap.put( "Postnr", new String[]{"0688"} );
+        paramsMap.put( "By", new String[]{"Oslo"} );
+        paramsMap.put( "Email", new String[]{"runar@myklebust.me"} );
+
+        final OrderSummary orderSummary = OrderSummaryFactory.create( items, paramsMap );
 
         final String result =
             templateFactory.create( orderSummary, IOUtils.toString( this.getClass().getResourceAsStream( "template.html" ), "UTF-8" ) );

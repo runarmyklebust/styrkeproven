@@ -9,23 +9,32 @@
 
 {{#orderSummary}}
 
-<h3>Number of products ordered: {{numberOfProducts}}</h3>
+<h3>Bestilt av:</h3>
+
+<ul>
+    {{name}}<br>
+    {{address}}<br>
+    {{zipcode}} {{city}}<br>
+    {{email}}<br>
+</ul>
+
+<h3>Produkter bestilt: {{numberOfProducts}}</h3>
 
 <ul>
     {{#items}}
     <li>
         <strong>{{displayName}}</strong><br>
-        Price: {{price}}<br>
-        Amount: {{amount}}<br>
-        Size: {{size}}<br>
+        Pris: {{price}}<br>
+        Antall: kr {{amount}}<br>
+        Størrelse: {{size}}<br>
         -----------------<br>
-        Total: {{total}}<br>
+        Totalt: kr {{total}}<br>
         -----------------<br>
     </li>
     {{/items}}
 </ul>
 
-<p>Order total amount: {{sum}},- </p>
+<p>Bestilling totalt: kr {{sum}},- </p>
 
 {{/orderSummary}}
 

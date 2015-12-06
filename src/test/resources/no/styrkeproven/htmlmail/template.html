@@ -1,29 +1,44 @@
 <html>
 <body>
 
+<img src="http://styrkeproven.no/_public/mail/top.jpg" alt="Styrkeprøven logo">
+
 <h1>Takk for din bestilling</h1>
 
-<h2>Oppsummering</h2>
+<h2>Summary</h2>
 
 {{#orderSummary}}
 
-<h3>Antall produkter: {{numberOfProducts}}</h3>
+<h3>Bestilt av:</h3>
+
+<ul>
+    <strong>{{name}}</strong>
+    {{address}}<br>
+    {{zipcode}} {{city}}<br>
+    {{email}}<br>
+</ul>
+
+<h3>Produkter bestilt: {{numberOfProducts}}</h3>
 
 <ul>
     {{#items}}
     <li>
-        Name: {{displayName}}<BR/>
-        Price: {{price}}<BR/>
-        Amount: {{amount}}<BR/>
-        Size: {{size}}<BR/>
+        <strong>{{displayName}}</strong><br>
+        Pris: {{price}}<br>
+        Antall: kr {{amount}}<br>
+        Størrelse: {{size}}<br>
+        -----------------<br>
+        Totalt: kr {{total}},-<br>
+        -----------------<br>
     </li>
     {{/items}}
 </ul>
 
-<p>Sum: {{sum}}</p>
+<p>Bestilling totalt: kr {{sum}},- </p>
 
 {{/orderSummary}}
 
-</body>
+<img src="http://styrkeproven.no/_public/mail/footer.jpg" alt="Styrkeprøven footer">
 
+</body>
 </html>

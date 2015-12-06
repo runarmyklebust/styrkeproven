@@ -2,13 +2,14 @@ package no.styrkeproven.htmlmail.order;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import no.styrkeproven.htmlmail.item.Item;
 import no.styrkeproven.htmlmail.item.Items;
 
 public class OrderSummaryFactory
 {
-    public static OrderSummary create( final Items items )
+    public static OrderSummary create( final Items items, Map<String, String[]> parameterMap )
     {
         final List<Item> boughtProducts = getBoughtProducts( items );
 
@@ -16,6 +17,7 @@ public class OrderSummaryFactory
             items( boughtProducts ).
             sum( calculateSum( boughtProducts ) ).
             numberOfProducts( boughtProducts.size() ).
+            setParameterMap( parameterMap ).
             build();
     }
 
