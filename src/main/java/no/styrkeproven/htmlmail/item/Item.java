@@ -6,7 +6,7 @@ public class Item
 
     private final int amount;
 
-    private final double price;
+    private final int price;
 
     private final String size;
 
@@ -55,7 +55,7 @@ public class Item
         return amount;
     }
 
-    public double getPrice()
+    public int getPrice()
     {
         return price;
     }
@@ -65,7 +65,7 @@ public class Item
         return size;
     }
 
-    public double getTotal()
+    public int getTotal()
     {
         return amount * price;
     }
@@ -76,7 +76,7 @@ public class Item
 
         private int amount;
 
-        private double price;
+        private int price;
 
         private String size;
 
@@ -96,7 +96,7 @@ public class Item
             return this;
         }
 
-        public Builder price( double price )
+        public Builder price( int price )
         {
             this.price = price;
             return this;

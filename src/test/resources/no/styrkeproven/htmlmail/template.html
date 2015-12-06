@@ -12,7 +12,7 @@
 <h3>Bestilt av:</h3>
 
 <ul>
-    <strong>{{name}}</strong>
+    {{name}}<br>
     {{address}}<br>
     {{zipcode}} {{city}}<br>
     {{email}}<br>
@@ -28,13 +28,13 @@
         Antall: kr {{amount}}<br>
         Størrelse: {{size}}<br>
         -----------------<br>
-        Totalt: kr {{total}},-<br>
+        Totalt: kr {{total}}<br>
         -----------------<br>
     </li>
     {{/items}}
 </ul>
 
-<p>Bestilling totalt: kr {{sum}},- </p>
+<p>Bestilling totalt: kr {{sum}} </p>
 
 {{/orderSummary}}
 

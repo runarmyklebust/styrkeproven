@@ -36,9 +36,9 @@ public class OrderSummaryFactory
         return boughtProducts;
     }
 
-    private static double calculateSum( final List<Item> items )
+    private static int calculateSum( final List<Item> items )
     {
-        double sum = 0;
+        int sum = 0;
 
         for ( final Item item : items )
         {

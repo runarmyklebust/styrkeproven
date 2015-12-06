@@ -24,7 +24,7 @@ public class ItemParser
             items.add( Item.create().
                 amount( getSingleIntValue( parameters, productItem + AMOUNT_POSTFIX ) ).
                 displayName( getSingleStringValue( parameters, productItem ) ).
-                price( new Double( getSingleStringValue( parameters, productItem + PRICE_POSTFIX ) ) ).
+                price( new Integer( getSingleStringValue( parameters, productItem + PRICE_POSTFIX ) ) ).
                 size( getSingleStringValue( parameters, productItem + SIZE_POSTFIX ) ).
                 build() );
         }

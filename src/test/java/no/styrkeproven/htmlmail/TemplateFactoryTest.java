@@ -26,14 +26,14 @@ public class TemplateFactoryTest
 
         items.add( Item.create().
             amount( 10 ).
-            price( 10.0 ).
+            price( 10 ).
             displayName( "myProduct" ).
             size( "XL" ).
             build() );
 
         items.add( Item.create().
             amount( 12 ).
-            price( 45.0 ).
+            price( 45 ).
             displayName( "myOtherProduct" ).
             size( "Fisk" ).
             build() );
@@ -53,14 +53,14 @@ public class TemplateFactoryTest
 
         items.add( Item.create().
             amount( 10 ).
-            price( 10.0 ).
+            price( 10 ).
             displayName( "myProduct" ).
             size( "XL" ).
             build() );
 
         items.add( Item.create().
             amount( 12 ).
-            price( 45.0 ).
+            price( 45 ).
             displayName( "myOtherProduct" ).
             size( "Fisk" ).
             build() );

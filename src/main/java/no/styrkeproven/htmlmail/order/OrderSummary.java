@@ -9,7 +9,7 @@ public class OrderSummary
 {
     private final List<Item> items;
 
-    private final double sum;
+    private final int sum;
 
     private final int numberOfProducts;
 
@@ -57,7 +57,7 @@ public class OrderSummary
         return items;
     }
 
-    public double getSum()
+    public int getSum()
     {
         return sum;
     }
@@ -96,7 +96,7 @@ public class OrderSummary
     {
         private List<Item> items;
 
-        private double sum;
+        private int sum;
 
         private int numberOfProducts;
 
@@ -112,7 +112,7 @@ public class OrderSummary
             return this;
         }
 
-        public Builder sum( double sum )
+        public Builder sum( int sum )
         {
             this.sum = sum;
             return this;
